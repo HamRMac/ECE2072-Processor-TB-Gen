@@ -1,4 +1,4 @@
-# Automated Testbench Generator for FPGA Processor\
+# Automated Testbench Generator for FPGA Processor
 *By Hamish M 32474741*\
 For Monash University Unit ECE2072 Assignment
 ---
