@@ -179,7 +179,7 @@ integer errors = 0;
 wire [3:0] tick;
 wire [15:0] bus, R0, R1, R2, R3, R4, R5, R6, R7{", display" if (version == 2) else ""};
 reg [15:0] bus_prev, R0_prev, R1_prev, R2_prev, R3_prev, R4_prev, R5_prev, R6_prev, R7_prev{", display_prev" if (version == 2) else ""};
-, , , bus, tick, R0, R1, R2, R3, R4, R5, R6, 
+
 {"ext" if (version == 2) else "simple"}_proc myProcessor(.clk(clock), .rst(rst), .din(din), .bus(bus), .tick(tick), .R0(R0), .R1(R1), .R2(R2), .R3(R3), .R4(R4), .R5(R5), .R6(R6), .R7(R7){", .display(display)" if (version == 2) else ""});\n\n"""]
     
     testbench_code.append("// Initialize")
