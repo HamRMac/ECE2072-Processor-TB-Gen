@@ -25,4 +25,4 @@ Comments can be included by prepending the comment with a semi-colon (;). New li
 ## Usage
 The script takes two arguments; the path to the .asm file, and the version for which the test bench will be generated. If the version is ommitted, it will default to 2.\
 ```TestBenchASM.py <PATH> [VERSION]```\
-The script will generate a testbench.txt file containing the testbench code.
+The script will generate a testbench_v[VERSION].txt file containing the testbench code where [VERSION] is the requested version.
