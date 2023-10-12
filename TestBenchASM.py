@@ -170,7 +170,7 @@ Please enter your student ID:
 */
 module proc{"_extension" if (version == 2) else ""}_tb;
 // TODO: Implement the logic of your testbench here
-initial $display("-=- Loaded proc_tb.v -=-");
+initial $display("-=- Loaded proc{"_extension" if (version == 2) else ""}_tb.v -=-");
     
 reg clock, rst;
 reg [8:0] din;
