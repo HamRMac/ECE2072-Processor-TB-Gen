@@ -18,7 +18,8 @@ The python script supports the following instructions
 | srl Rx             | Stores Rx shifted right by one bit in register Rx | Rx = Rx >> 1        | 2                 |
 | movi Rx, immediate | Stores an immediate in register Rx                | Rx = immediate      | 1                 |
 
-As this script is designed to support both a reduced instructin set version (version 1) and a full instruction set version (version 2) the version number represents the instructions supported in each mode.\
+*Note that all immediates are limited to the signed 9-bit range of -256 to 255. This is not enforced so take care when creating .asm files*
+As this script is designed to support both a reduced instruction set version (version 1) and a full instruction set version (version 2) the version number represents the instructions supported in each mode.\
 Comments can be included by prepending the comment with a semi-colon (;). New lines are ignored. All instructions _will_ generate testbench code. There is no way  to prevent testbench code from being generated for a specific instruction.
 * Non-supported instructions will generate the line "// UNSUPPORTED INSTRUCTION"
 * Unknown or invalid instructions will generate the line "// UNKNOWN INSTRUCTION"
